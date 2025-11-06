@@ -10,7 +10,7 @@ cat > devbox.json <<EOF
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.16.0/.schema/devbox.schema.json",
   "env": { "PROJECT_DIR": "$PWD" },
   "packages": [
-	"git@latest"
+	"git@latest",
     "fd@latest",
     "fish@latest",
     "fzf@latest",
