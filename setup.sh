@@ -1,6 +1,6 @@
 #!/bin/bash
 # My own portable dev environment - with Portable Nix
-# To run this script:   curl -fsSL https://raw.githubusercontent.com/Ax-Projects/devbox/refs/heads/main/setup.sh | bash
+# To run this script:   curl -fsSL https://github.com/Ax-Projects/devbox/raw/refs/heads/main/setup.sh | bash
 
 
 # Prepare Neovim and BashRC
@@ -72,6 +72,5 @@ cd && rm -f devbox.*
 EOF
 
 chmod u+x ams-set-nvim.sh ams-cleanup.sh
-devbox install -q && \
-devbox run set-nvim && \
+devbox install && \
 devbox shell
